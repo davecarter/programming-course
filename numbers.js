@@ -1,3 +1,5 @@
+use strict;
+
 function test(A,B,C){
   // Comprobamos si A es el mayor
   if(A > B){
@@ -10,7 +12,7 @@ function test(A,B,C){
       console.log("A es el valor mayor");
       console.log("B es el valor menor");
     }
-  } 
+  }
 
   if (B > A){
     // Comprobamos si B es el mayor
@@ -22,9 +24,11 @@ function test(A,B,C){
       console.log("B es el valor mayor");
       console.log("A es el valor menor");
     }
-  } 
-  
-  console.log("C es el valor mayor");
+  }
+
+  if ((C > A) && (C > B)){
+    console.log("C es el valor mayor");
+  }
 }
 
 test(100,50,30);
