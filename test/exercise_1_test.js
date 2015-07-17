@@ -1,5 +1,5 @@
 import expect from 'expect';
-import {getTheGreatestNumber, compareThreeNumbers} from '../src/exercise1';
+import {getTheGreatestNumber, compareThreeNumbers} from '../src/exercise_1';
 
 describe('Given two numbers', function(){
   it('returns the first number if it is the greatest', function() {   
