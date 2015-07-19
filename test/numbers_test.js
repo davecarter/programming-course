@@ -31,4 +31,12 @@ describe('Given three numbers', function(){
     getBigger(a, b);
     expect(getBiggestOfThree(getBigger(a, b), c)).toBe(b);
   })
+
+  it('returns the biggest of all three when is a', function(){
+    var a = 30;
+    var b = 10;
+    var c = 20;
+    getBigger(a, b);
+    expect(getBiggestOfThree(getBigger(a, b), c)).toBe(a);
+  })
 });
