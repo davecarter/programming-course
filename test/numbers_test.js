@@ -1,5 +1,5 @@
 import expect from 'expect';
-import {getBigger, getBiggestOfThree} from '../src/numbers_03.js';
+import {getBigger, getSmaller, getBiggestOfThree, getSmallerOfThree} from '../src/numbers_03.js';
 
 describe('Given two numbers', function(){
   it('returns the biggest when is b', function(){
@@ -39,4 +39,20 @@ describe('Given three numbers', function(){
     getBigger(a, b);
     expect(getBiggestOfThree(getBigger(a, b), c)).toBe(a);
   })
+});
+
+describe('Given three numbers', function(){
+  it('returns the Biggest and the Smallest', function(){
+    var a = 10;
+    var b = 20;
+    var c = 30;
+    getBigger(a, b);
+    expect(getBiggestOfThree(getBigger(a, b), c)).toBe(c);
+    getSmaller(a, b);
+    expect(getSmallerOfThree(getSmaller(a, b), c)).toBe(a);
+    
+  })
+  after(function(){
+    console.log('    ᕦ(ò_óˇ)ᕤ    ☜(ﾟヮﾟ☜)')
+  });
 });
