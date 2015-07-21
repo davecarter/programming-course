@@ -12,7 +12,7 @@ describe('Given a number', function(){
 
 describe('Given two numbers', function(){
   it('Gets all the multiples of five between them', function(){
-    expect(getMultiplesOfFive(1, 5)).toInclude(5);
+    // expect(getMultiplesOfFive(1, 5)).toInclude(5);
     expect(getMultiplesOfFive(1, 10)).toInclude(5).toInclude(10);
   });
 
