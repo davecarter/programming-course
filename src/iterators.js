@@ -12,7 +12,8 @@ const getMultiplesOfFive = (a, b) => {
 }
 
 const getSumOfMultiples = (a, b) => {
-  return 5;
+  var getMultiples = getMultiplesOfFive(a, b);
+  return parseInt(getMultiples);
 }
 
 export {isMultipleOfFive, getMultiplesOfFive, getSumOfMultiples};
