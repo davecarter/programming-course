@@ -12,11 +12,11 @@ describe('Given a number', function(){
 
 describe('Given two numbers', function(){
   it('Gets all the multiples of five between them', function(){
-    // expect(getMultiplesOfFive(1, 5)).toInclude(5);
+    expect(getMultiplesOfFive(1, 5)).toInclude(5);
     expect(getMultiplesOfFive(1, 10)).toInclude(5).toInclude(10);
   });
 
-  xit('Gets the sum of all the multiples of five between them', function(){
+  it('Gets the sum of all the multiples of five between them', function(){
     expect(getSumOfMultiples(1, 5)).toBe(5);
     expect(getSumOfMultiples(1, 10)).toBe(15);
     expect(getSumOfMultiples(1, 20)).toBe(50);
